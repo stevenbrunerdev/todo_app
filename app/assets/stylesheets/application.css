@@ -18,3 +18,20 @@ turbo-frame {
   border: 1px solid lightblue;
   border-radius: 5px;
 }
+
+.flash-message {
+  animation: fadeOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

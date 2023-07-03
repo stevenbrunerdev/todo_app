@@ -23,14 +23,6 @@ class TasksController < ApplicationController
 
   def complete_task
     @task.update(completed: params[:completed])
-
-    respond_to do |format|
-      if @task.save
-        format.json { render json: { message: 'Task updated successfully' } }
-      else
-        format.json { render json: { error: 'Failed to update task' }, status: :unprocessable_entity }
-      end
-    end
   end
 
   def edit; end

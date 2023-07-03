@@ -1,24 +1,26 @@
-# README
+# ToDo App
+  This app provides you a solution to track your daily tasks.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Models
+  - Task
 
-Things you may want to cover:
+# Gems
+  - tailwindcss-rails
+  - rspec
+  - shoulda
+  - factory_bot_rails
+  
+# System dependencies
+  - Rails 7.0.6
+  - Ruby 3.2.2
+  - Postgres
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Setup Instructions
+  - Clone the repo (git clone https://github.com/stevenbrunerdev/todo_app.git)
+  - Run bundle install
+  - Setup database
+    - rails db:create
+    - rails db:migrate
+  - precompile the assets by running "rails assets:precompile"
+  - start the server by running "foreman start -f Procfile.dev"
+  - Go to http://localhost:3000
